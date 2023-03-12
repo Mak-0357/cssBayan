@@ -31,6 +31,7 @@
       color: blueviolet;
       font-size: 24px;
       font-weight: 900;
+      padding-right: 59%;
     }
     .memes {
       display: none;
@@ -55,7 +56,7 @@
     }
     .accordion_item:hover .memes {
       animation: gif_appearance;
-      animation-duration: 2s;
+      animation-duration: 3s;
     }
     @keyframes gif_appearance {
       from {top: -50px; opacity: 0;}
@@ -87,7 +88,8 @@
       }
       .memes {
         width: 130px;
-        margin-left: 25%;
+        padding: 0 25%;
+        /* margin-left: 25%; */
       }
       @keyframes gif_appearance {
       from {top: -10px;}
@@ -120,7 +122,9 @@
       }
       .memes {
         width: 200px;
-        margin-left: 33%;
+        padding-left: 33%;
+        padding-right: 33%;
+        /* margin-left: 33%; */
       }
     }
     @media only screen and (min-width: 1200px) {
@@ -149,7 +153,8 @@
       }
       .memes {
         width: 350px;
-        margin-left: 35%;
+        padding: 0 33%;
+        /* margin-left: 35%; */
       }
     }
   </style>
