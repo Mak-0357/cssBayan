@@ -4,9 +4,115 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <title>CSS BAYAN</title>
+  <style>
+    .container {
+      margin: 7% 20% 7% 20%;
+    }
+    .header {
+      text-align: start;
+      font-size: 56px;
+    }
+    .btn {
+      opacity: 0;
+    }
+    .accordion_item {
+      margin: 15px 0;
+    }
+    i {
+      position: absolute;
+      right: 21%;
+    }
+    span {
+      margin-left: -2%;
+    }
+    .accordion_item_title {
+      color: blueviolet;
+      font-size: 24px;
+      font-weight: 900;
+      /* display: grid;
+      grid-areas: ; */
+    }
+    .memes {
+      display: none;
+      width: 400px;
+    }
+    .fa-xmark {
+      display: none;
+    }
+    .accordion:hover .accordion_item_title {
+      color: black;
+    }
+    .btn:checked ~ .memes {
+      display: block;
+    }
+    .btn:checked ~ .accordion_item_title .fa-xmark  {
+      display: block;
+    }
+    .btn:checked ~ .accordion_item_title .fa-plus  {
+      display: none;
+    }
+    .btn:checked ~ .accordion_item_title {
+      color: black;
+    }
+  </style>
 </head>
 <body>
-  
+  <div class="container">
+    <h1 class="header">CSS Bayan</h1>
+    <div class="accordion">
+      <hr>
+      <div class="accordion_item">
+        <input type="radio" id="first_btn" class="btn" checked name="btn" value="first_btn">
+        <label for="first_btn" class="accordion_item_title">
+          <span>You can't just copy and paste CSS</span>
+          <i class="fa-solid fa-plus"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+        <img class="memes" src="/cssBayan/memes/sticker.png" alt="">
+      </div>
+      <hr>
+      <div class="accordion_item">
+        <input type="radio" id="second_btn" class="btn" name="btn" value="second_btn">
+        <label for="second_btn" class="accordion_item_title">
+          <span>Keep calm and carry on</span>
+          <i class="fa-solid fa-plus"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+        <img class="memes" src="/cssBayan/memes/sticker2.png" alt="">
+      </div>
+      <hr>
+      <div class="accordion_item">
+        <input type="radio" id="third_btn" class="btn" name="btn" value="third_btn">
+        <label for="third_btn" class="accordion_item_title">
+          <span>Work-life balance</span>
+          <i class="fa-solid fa-plus"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+        <img class="memes" src="/cssBayan/memes/sticker3.png" alt="">
+      </div>
+      <hr>
+      <div class="accordion_item">
+        <input type="radio" id="fourth_btn" class="btn" name="btn" value="fourth_btn">
+        <label for="fourth_btn" class="accordion_item_title">
+          <span>Dude, where is JS?</span>
+          <i class="fa-solid fa-plus"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+        <img class="memes" src="/cssBayan/memes/sticker4.png" alt="">
+      </div>
+      <hr>
+      <div class="accordion_item">
+        <input type="radio" id="fifth_btn" class="btn" name="btn" value="fifth_btn">
+        <label for="fifth_btn" class="accordion_item_title">
+          <span>Relax and take it easy  </span>
+          <i class="fa-solid fa-plus"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+        <img class="memes" src="/cssBayan/memes/sticker5.png" alt="">
+      </div>
+    </div>
+  </div>
 </body>
 </html>
